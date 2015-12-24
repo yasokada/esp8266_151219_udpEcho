@@ -8,6 +8,8 @@
  */
 
 /*
+ * v0.2 2015 Dec. 25
+ *   - correct typo
  * v0.1 2015 Dec. 19
  *   can echo back
  *   - add loop()
@@ -42,7 +44,7 @@ static void Serial_setup()
   Serial.println(""); // to separate line  
 }
 
-static void WiFi_printConectionInfo()
+static void WiFi_printConnectionInfo()
 {
   Serial.println("\nLocal IP=");
   Serial.println(WiFi.localIP());
@@ -53,7 +55,7 @@ static void WiFi_printConectionInfo()
 void setup() {
   Serial_setup();
   WiFi_setup();
-  WiFi_printConectionInfo();
+  WiFi_printConnectionInfo();
 }
 
 void loop() 
